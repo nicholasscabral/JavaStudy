@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class numbers {
-    int n, num, soma = 0, i = 0, contpar = 0, contimpar= 0;
+    int n, num, nota, cont = 0, soma = 0, i = 0, contpar = 0, contimpar= 0;
     Scanner prompt = new Scanner(System.in);
 
     public void somaNumeros() {

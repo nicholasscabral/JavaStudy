@@ -9,7 +9,7 @@ public class principal {
         //n.somaNumeros();
         //n.mediaNumeros();
         //n.paresImpares();
-        //s.contagem();
+        //n.contagem();
 
     }
 }
