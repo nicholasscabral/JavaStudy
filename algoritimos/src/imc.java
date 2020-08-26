@@ -1,26 +1,9 @@
 import java.util.Scanner;
 
-public class segunda {
-    int n, nota, cont = 0, i = 0;
+public class imc {
     Scanner prompt = new Scanner(System.in);
 
-
-    public void contagem() {
-        System.out.println("Numero de notas");
-        n = prompt.nextInt();
-        while (i < n) {
-            i++;
-            System.out.println("Nota do aluno: ");
-            nota = prompt.nextInt();
-            if (nota >= 50) {
-                cont++;
-            }
-        }
-        System.out.println("Numero de aprovações: " + cont);
-
-    }
-
-    public void imc() {
+    public void IMC() {
         System.out.println("Digite seu peso: ");
         double peso = prompt.nextDouble();
         System.out.println("Digite sua altura: ");
