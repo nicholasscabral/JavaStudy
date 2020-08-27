@@ -4,12 +4,16 @@ public class principal {
         imc s = new imc();
         //s.IMC();
 
-        //Numbers Algoritimos
+        //Numericos Algoritimos
         numbers n = new numbers();
         //n.somaNumeros();
         //n.mediaNumeros();
         //n.paresImpares();
         //n.contagem();
+
+        //Algoritimo Fatorial
+        fatorial f = new fatorial();
+        //f.fat();
 
     }
 }
