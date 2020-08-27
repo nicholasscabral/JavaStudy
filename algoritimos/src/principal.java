@@ -1,8 +1,8 @@
 public class principal {
     public static void main(String[] args) {
         //IMC Algoritimo
-        imc s = new imc();
-        //s.IMC();
+        imc i = new imc();
+        //i.IMC();
 
         //Numericos Algoritimos
         numbers n = new numbers();
@@ -14,6 +14,10 @@ public class principal {
         //Algoritimo Fatorial
         fatorial f = new fatorial();
         //f.fat();
+
+        //Algoritimo serie finita
+        serieFinita s = new serieFinita();
+        //s.calculoSeriefinita();
 
     }
 }
