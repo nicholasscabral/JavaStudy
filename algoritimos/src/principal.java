@@ -19,5 +19,9 @@ public class principal {
         serieFinita s = new serieFinita();
         //s.calculoSeriefinita();
 
+        //Algoritimo sequencia de fibonacci
+        fibonacci k = new fibonacci();
+        //k.gerarNumeros();
+
     }
 }
