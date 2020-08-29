@@ -4,7 +4,7 @@ public class principal {
         imc i = new imc();
         //i.IMC();
 
-        //Numericos Algoritimos
+        //Algoritimos Numericos
         numbers n = new numbers();
         //n.somaNumeros();
         //n.mediaNumeros();
@@ -26,6 +26,10 @@ public class principal {
         //Algoritimo converter base
         converterbase c = new converterbase();
         //c.convert();
+
+        //Algoritimo inverter numero inteiro
+        inverterDigitos z = new inverterDigitos();
+        //z.inverter();
 
     }
 }
