@@ -23,5 +23,9 @@ public class principal {
         fibonacci k = new fibonacci();
         //k.gerarNumeros();
 
+        //Algoritimo converter base
+        converterbase c = new converterbase();
+        //c.convert();
+
     }
 }
