@@ -17,4 +17,13 @@ public class disciplinas {
         }
         return disciplinas;
     }
+
+    @Override
+    public String toString() {
+        return "disciplinas = {\n" +
+                "input=" + input +
+                "\n, disciplinas=" + disciplinas +
+                "\n, NumeroDisciplinas=" + NumeroDisciplinas +
+                '}';
+    }
 }
