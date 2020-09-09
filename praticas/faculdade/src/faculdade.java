@@ -4,8 +4,9 @@ import java.util.Scanner;
 public class faculdade {
     private static Object curso;
     private static Object aluno;
+    private static Object disciplinas;
 
-    public static <aluno, curso> void main(String[] args) {
+    public static <aluno, curso, professor> void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String nome, area, cursando;
         int semestres, matricula, fazer;
@@ -13,8 +14,10 @@ public class faculdade {
         boolean refazer = true;
         ArrayList<aluno> ListaAlunos = new ArrayList<>();
         ArrayList<curso> ListaCursos = new ArrayList<>();
-        cursos curso = new cursos();
+        ArrayList<professor> ListaProfessores = new ArrayList<>();
         alunos aluno = new alunos();
+        cursos curso = new cursos();
+        professores professor = new professores();
 
 
         //predefinidos teste aluno
@@ -39,7 +42,6 @@ public class faculdade {
                     "3- Cadastrar um professor ");
             fazer = input.nextInt();
             if (fazer == 1) { // Cadastrar curso
-                //cursos curso = new cursos();
                 while (adicionar) {
 
                     System.out.println("nome do curso: ");
@@ -81,8 +83,22 @@ public class faculdade {
                 }
             }
             else if (fazer == 3) {
-                for (curso i : ListaCursos) {
-                    System.out.println(curso);
+                adicionar = true;
+                while (adicionar) {
+                    System.out.println("nome do professor: ");
+                    nome = input.next();
+                    System.out.println("matricula do professor: ");
+                    matricula = input.nextInt();
+                    ListaProfessores.add(professor.AddProfessor(nome, matricula));
+                    System.out.println(professor);
+                    // verificar se o usuario deseja cadastrar um novo professor
+                    System.out.println("desejar adicionar outro professor? true ou false?");
+                    adicionar = input.nextBoolean();
+                }
+                System.out.println("deseja fazer outra consulta? true ou false");
+                refazer = input.nextBoolean();
+                for (professor i : ListaProfessores) {
+                    System.out.println(professor);
                 }
             }
         }
