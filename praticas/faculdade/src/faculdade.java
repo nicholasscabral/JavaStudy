@@ -19,22 +19,22 @@ public class faculdade {
         cursos curso = new cursos();
         professores professor = new professores();
 
-
+        /*
         //predefinidos teste aluno
-        //ListaAlunos.add(0, aluno.AddAluno("nicholas", "engenharia de computação", 2010373));
-        //ListaAlunos.add(1, aluno.AddAluno("junior", "engenharia de produção", 1122334));
-        //System.out.println(ListaAlunos);
-        //for (aluno i : ListaAlunos) {
-        //    System.out.println(aluno);
-        //}
+        ListaAlunos.add(0, aluno.AddAluno("nicholas", "engenharia de computação", 2010373));
+        ListaAlunos.add(1, aluno.AddAluno("junior", "engenharia de produção", 1122334));
+        System.out.println(ListaAlunos);
+        for (aluno i : ListaAlunos) {
+            System.out.println(aluno);
+        }
         //predefinido teste curso
-        //ListaCursos.add(0, (curso) curso.AddCurso("odontologia", 10, "saude"));
-        //ListaCursos.add(1, (curso) curso.AddCurso("engenharia", 10, "tecnologia"));
-        //for (curso i : ListaCursos) {
-        //    System.out.println(curso);
-        //}
-
-        while (refazer) {
+        ListaCursos.add(0, (curso) curso.AddCurso("odontologia", 10, "saude"));
+        ListaCursos.add(1, (curso) curso.AddCurso("engenharia", 10, "tecnologia"));
+        for (curso i : ListaCursos) {
+            System.out.println(curso);
+        }
+        */
+         while (refazer) {
             // Checando oque o usuário deseja fazer
             System.out.println("Oque você deseja fazer? \n" +
                     "1- Cadastrar curso \n" +
@@ -90,15 +90,15 @@ public class faculdade {
                     System.out.println("matricula do professor: ");
                     matricula = input.nextInt();
                     ListaProfessores.add(professor.AddProfessor(nome, matricula));
-                    System.out.println(professor);
+
                     // verificar se o usuario deseja cadastrar um novo professor
                     System.out.println("desejar adicionar outro professor? true ou false?");
                     adicionar = input.nextBoolean();
                 }
                 System.out.println("deseja fazer outra consulta? true ou false");
                 refazer = input.nextBoolean();
-                for (professor i : ListaProfessores) {
-                    System.out.println(professor);
+                for (int i = 0; i < ListaProfessores.size(); i++) {
+                    System.out.println("professor "+ (i+1) + "\n" + professor);
                 }
             }
         }

@@ -9,6 +9,7 @@ public class disciplinas {
     public ArrayList AddDisciplinas() {
         System.out.println("quantidade de disciplinas ");
         NumeroDisciplinas = input.nextInt();
+        disciplinas.clear(); // reiniciar o array disciplinas a cada cadastro
 
         for (int i = 0; i < NumeroDisciplinas; i++) {
             System.out.println("nome da disciplina " + (i + 1));
