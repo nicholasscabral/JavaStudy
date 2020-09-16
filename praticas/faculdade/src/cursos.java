@@ -1,20 +1,19 @@
+import java.util.ArrayList;
+
 public class cursos {
     String nome, area;
     int semestres;
     Object curso;
-    private String disciplinas;
+    private ArrayList disciplinas;
 
     disciplinas grade = new disciplinas();
 
     //construtor
-    public <curso> curso AddCurso(String nome, int semestres, String area) {
-        curso = new String[]{
-                this.nome = nome,
-                String.valueOf(this.semestres = semestres),
-                this.area = area,
-                disciplinas = String.valueOf(grade.AddDisciplinas())
-        };
-        return (curso) curso;
+    public cursos(String nome, String area, int semestres) {
+        this.nome = nome;
+        this.area = area;
+        this.semestres = semestres;
+        disciplinas = grade.AddDisciplinas();
     }
 
     public String getNome() {
@@ -29,7 +28,7 @@ public class cursos {
         return area;
     }
 
-    public String getDisciplinas() {
+    public ArrayList getDisciplinas() {
         return disciplinas;
     }
 

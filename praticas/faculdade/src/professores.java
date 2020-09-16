@@ -1,18 +1,21 @@
+import java.util.ArrayList;
+
 public class professores {
     String nome;
     int matricula;
     Object professor;
-    private String disciplinas;
+    private ArrayList disciplinas;
 
     disciplinas leciona = new disciplinas();
 
-    public <professor> professor AddProfessor(String nome, int matricula) {
-        professor = new String[] {
-            this.nome = nome,
-            String.valueOf(this.matricula = matricula),
-            disciplinas = String.valueOf(leciona.AddDisciplinas())
-        };
-        return (professor) professor;
+    public professores() {
+
+    }
+
+    public professores(String nome, int matricula) {
+        this.nome = nome;
+        this.matricula = matricula;
+        disciplinas = leciona.AddDisciplinas();
     }
 
     public String getNome() {
@@ -23,7 +26,7 @@ public class professores {
         return matricula;
     }
 
-    public String getDisciplinas() {
+    public ArrayList getDisciplinas() {
         return disciplinas;
     }
 

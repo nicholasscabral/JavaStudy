@@ -6,13 +6,10 @@ public class alunos {
     Object aluno;
     int matricula;
 
-    public <aluno> aluno AddAluno(String nome, String cursando, int matricula) {
-        aluno = new String[] {
-            this.nome = nome,
-            this.cursando = cursando,
-            String.valueOf(this.matricula = matricula)
-        };
-        return (aluno) aluno;
+    public alunos(String nome, int matricula, String cursando) {
+        this.nome = nome;
+        this.matricula = matricula;
+        this.cursando = cursando;
     }
 
     public String getNome() {

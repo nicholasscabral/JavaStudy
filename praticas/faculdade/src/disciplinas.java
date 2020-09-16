@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class disciplinas {
     Scanner input = new Scanner(System.in);
-    ArrayList<String> disciplinas = new ArrayList<String>();
+    ArrayList<String> disciplinas = new ArrayList<>();
     int NumeroDisciplinas;
 
     public ArrayList AddDisciplinas() {
