@@ -9,16 +9,6 @@ public class hotel {
         ArrayList<quartos> ListaQuartos = new ArrayList<>();
         ArrayList<pacotes> ListaPacotes = new ArrayList<>();
 
-        //cadastrando quartos
-        /* {
-            quartos quarto1 = new quartos(2, 5);
-            ListaQuartos.add(quarto1);
-            quartos quarto2 = new quartos(1, 2);
-            ListaQuartos.add(quarto2);
-            quartos quarto3 = new quartos(1, 1);
-            ListaQuartos.add(quarto3);
-        } */
-
         //casdtrar pacotes
         {
             pacotes pacoteFamilia = new pacotes("Familia", 1500);
@@ -34,14 +24,12 @@ public class hotel {
             ListaQuartos.add(pacoteSolteiro.getQuarto());
         }
 
-        //restaurantes cardapio = new restaurantes();
-        //System.out.println(cardapio.addPratos());
-
 
         System.out.println("Oque deseja fazer? \n" +
                 "1- Check-in \n" +
                 "2- opções de quartos \n" +
-                "3- opções de pacotes");
+                "3- opções de pacotes \n" +
+                "4- restaurante");
         escolha = input.nextInt();
         if (escolha == 1) {
             System.out.println("nome do responsavel");
@@ -66,6 +54,18 @@ public class hotel {
         else if (escolha == 3) {
             for (pacotes i : ListaPacotes) {
                 System.out.println(i);
+            }
+        }
+        else if (escolha == 4) {
+            System.out.println("mesa para quantas pessoas?");
+            int pessoas = input.nextInt();
+            new restaurantes().reserva(pessoas);
+
+            System.out.println("deseja fazer seu pedido agora?");
+            String fazerPedido = input.next();
+            if (fazerPedido.equals("sim")) {
+                new restaurantes().atendimento();
+
             }
         }
     }
