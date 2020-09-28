@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class desafio10 {
     Scanner input = new Scanner(System.in);
     int escolha, valor, repeticoes;
-    int[] vetor = new int[20];
+    int[] vetor = new int[10];
     boolean repetir = true;
     boolean adicionar = true;
 
@@ -33,7 +33,7 @@ public class desafio10 {
                             break;
                         }
                     }
-                    System.out.println("- deseja adicionar outro numero? true ou false");
+                    System.out.println("\n- deseja adicionar outro numero? true ou false");
                     adicionar = input.nextBoolean();
                 }
 
@@ -43,15 +43,20 @@ public class desafio10 {
 
             // CONSULTAR TODOS OS NUMEROS DO VETOR
             else if (escolha == 2) {
+                boolean vazio = true;
                 System.out.print("[");
                 for (int numero : vetor) {
                     if (numero != 0) {
+                        vazio = false;
                         System.out.print(numero + " ,");
                     }
                 }
-                System.out.print("] \n");
+                System.out.print("]");
+                if (vazio) {
+                    System.out.println(" - o vetor esta vazio");
+                }
 
-                System.out.println("- deseja escolher outra opção? true ou false");
+                System.out.println("\n- deseja escolher outra opção? true ou false");
                 repetir = input.nextBoolean();
             }
 
@@ -97,6 +102,21 @@ public class desafio10 {
 
                 System.out.println("- deseja escolher outra opção? true ou false");
                 repetir = input.nextBoolean();
+            }
+
+            // ESVAZIAR O VETOR
+            else if (escolha == 5) {
+                Arrays.fill(vetor, 0);
+
+                System.out.println("Vetor esvaziado com sucesso \n");
+
+                System.out.println("- deseja escolher outra opção? true ou false");
+                repetir = input.nextBoolean();
+            }
+
+            // SAIR
+            else if (escolha == 6) {
+                return;
             }
 
         }
