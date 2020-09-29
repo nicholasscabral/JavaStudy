@@ -12,5 +12,8 @@ public class desafios {
         desafio13 desafio13 = new desafio13();
         //desafio13.resolucao();
 
+        // DESAFIO 9
+        desafio9 desafio9 = new desafio9(); // pode alterar os salarios e tempo de serviço a titulo de testes
+        //desafio9.resolucao();
     }
 }
