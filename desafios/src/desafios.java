@@ -6,7 +6,7 @@ public class desafios {
 
         // DESAFIO 10
         desafio10 desafio10 = new desafio10();
-        //desafio10.resolucao();
+        desafio10.resolucao();
 
         // DESAFIO 13
         desafio13 desafio13 = new desafio13();
