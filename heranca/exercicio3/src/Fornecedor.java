@@ -1,10 +1,10 @@
-public class Fornecedor extends Pessoa{
+public class Fornecedor extends Pessoa {
     private double valorCredito, valorDivida;
 
     public double obterSaldo() {
-        double saldo = valorCredito - valorDivida;
 
-        return saldo;
+        return valorCredito - valorDivida;
+
     }
 
     public double getValorCredito() {

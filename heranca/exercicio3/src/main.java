@@ -6,6 +6,11 @@ public class main {
         Operario operario = new Operario();
         Vendedor vendedor = new Vendedor();
 
+        // teste classe fornecedor
+        fornecedor.setValorCredito(1200.00);
+        fornecedor.setValorDivida(400.00);
+        System.out.println(fornecedor.obterSaldo());
+
         // teste classe empregado
         empregado.setImposto(0.10);
         empregado.setSalarioBase(700.00);
