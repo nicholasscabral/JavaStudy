@@ -3,9 +3,8 @@ public class Empregado extends Pessoa{
     private String matricula;
 
     public double valorInss() {
-        double Inss = salario * 1.11;
 
-        return Inss;
+        return salario * 0.11;
     }
 
     public double getSalario() {

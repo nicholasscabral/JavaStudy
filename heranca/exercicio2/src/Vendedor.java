@@ -22,8 +22,8 @@ public class Vendedor extends Empregado {
     public String toString() {
         return "Vendedor = {\n" +
                 "  nome: " + getNome() + ",\n" +
-                "  salario: " + getSalario() + ",\n" +
-                "  valor das vendas: " + getValorVendas() + ",\n" +
+                "  salario: " + getSalario() + "R$,\n" +
+                "  valor das vendas: " + getValorVendas() + "R$,\n" +
                 "  quantidade de vendas: " + getQntVendas() + "\n}";
     }
 }

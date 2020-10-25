@@ -16,6 +16,6 @@ public class Gerente extends Empregado{
                 "  idade: " + getIdade() + ",\n" +
                 "  matricula: " + getMatricula() + ",\n" +
                 "  nome da gerencia: " + getNomeGerencia() + ",\n" +
-                "  valor do INSS: " + valorInss() + "\n}";
+                "  valor do INSS: " + valorInss() + "R$\n}";
     }
 }

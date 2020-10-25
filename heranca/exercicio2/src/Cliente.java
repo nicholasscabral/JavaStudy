@@ -24,7 +24,7 @@ public class Cliente extends Pessoa {
                 "  nome: " + getNome() + ",\n" +
                 "  idade: " + getIdade() + ",\n" +
                 "  sexo: " + getSexo() + ",\n" +
-                "  valor da divida: " + getValorDivida() + ",\n" +
+                "  valor da divida: " + getValorDivida() + "R$,\n" +
                 "  ano de nascimento: " + getAnoNascimento() + "\n}";
     }
 }
