@@ -3,15 +3,16 @@ public class main {
         Peixe peixe = new Peixe();
         Cachorro cachorro = new Cachorro();
 
-        peixe.setNome("nnnn");
+        // teste classe peixe
+        peixe.setNome("pirarucu");
         peixe.setPeso(12.32);
         peixe.setTipoHabitat("agua doce");
+        System.out.println(peixe);
 
+        // teste classe cachorro
         cachorro.setNome("chico");
         cachorro.setPeso(10.00);
         cachorro.setRaca("shitzu");
-
-        System.out.println(peixe);
         System.out.println(cachorro);
     }
 }
