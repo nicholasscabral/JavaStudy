@@ -1,4 +1,4 @@
-public class teste {
+public class TryCatch {
     public static void main(String[] args) {
 
         try{
@@ -15,5 +15,12 @@ public class teste {
         }
 
         System.out.println("esse texto será mostrado pois o erro foi tratado");
+
+        // OUTPUT
+        /*
+        texto antes do erro
+        tentando acessar index que nao existe, tamanho imcompativel
+        esse texto será mostrado pois o erro foi tratado
+        */
     }
 }
